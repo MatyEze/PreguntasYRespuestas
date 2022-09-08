@@ -11,6 +11,7 @@ import { RegisterComponent } from './components/inicio/register/register.compone
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { CambiarPasswordComponent } from './components/dashboard/cambiar-password/cambiar-password.component';
 import { NavbarComponent } from './components/dashboard/navbar/navbar.component';
+import { CuestionariosComponent } from './components/dashboard/cuestionarios/cuestionarios.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { NavbarComponent } from './components/dashboard/navbar/navbar.component'
     RegisterComponent,
     DashboardComponent,
     CambiarPasswordComponent,
-    NavbarComponent
+    NavbarComponent,
+    CuestionariosComponent
   ],
   imports: [
     BrowserModule,
