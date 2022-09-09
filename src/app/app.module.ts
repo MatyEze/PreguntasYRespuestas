@@ -15,6 +15,7 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { CambiarPasswordComponent } from './components/dashboard/cambiar-password/cambiar-password.component';
 import { NavbarComponent } from './components/dashboard/navbar/navbar.component';
 import { CuestionariosComponent } from './components/dashboard/cuestionarios/cuestionarios.component';
+import { LoadingComponent } from './shared/loading/loading.component';
 
 @NgModule({
   declarations: [
@@ -26,14 +27,15 @@ import { CuestionariosComponent } from './components/dashboard/cuestionarios/cue
     DashboardComponent,
     CambiarPasswordComponent,
     NavbarComponent,
-    CuestionariosComponent
+    CuestionariosComponent,
+    LoadingComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
-    ToastrModule
+    ToastrModule.forRoot({positionClass:'toast-top-right'})
   ],
   providers: [],
   bootstrap: [AppComponent]
